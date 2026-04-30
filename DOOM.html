@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOOM</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <style>
+            html, body, #player {
+                overflow: hidden;
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
+
+    <body>
+        <iframe id="player" src="player/player.html"></iframe>
+        <script>
+            document.getElementById("player").addEventListener("load", (e) => e.target.contentWindow.loadPlayerImg("img/DOOM.zip"));
+        </script>
+    </body>
+</html>
